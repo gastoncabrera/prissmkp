@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "../src/components/Hero";
+import Hero from "../src/components/Hero/Index.jsx";
 import Header from "../src/components/Header";
 import Main from "../src/components/Main";
 import CarouselImages from "../src/components/CarouselImages";
