@@ -1,0 +1,41 @@
+@import "./../../../styles/utils";
+
+.header {
+  font-family: $font_1;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: $font_2;
+  color: white;
+}
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+}
+
+.navbar__item {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 30px;
+}

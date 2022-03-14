@@ -1,0 +1,13 @@
+{
+  "forms": {
+    "signupForm": {
+      "name": "signupForm",
+      "actions": [{ "type": "email", "to": "cabreragastonivan31@gmail.com" }],
+      "fields": {
+        "email": {
+          "required": true
+        }
+      }
+    }
+  }
+}
