@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "formspree":"formspree deploy"
+    "deploy": "formspree deploy",
+    "formspree": "formspree deploy"
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
