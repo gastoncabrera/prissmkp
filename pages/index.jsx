@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Hero from "../src/components/Hero/Index.jsx";
-import Header from "../src/components/Header";
-import Main from "../src/components/Main";
-import CarouselImages from "../src/components/CarouselImages";
-import Testimonial from "../src/components/Testimonial";
-import Contactame from "../src/components/Contactame";
+import Header from "../src/components/Header/Index.jsx";
+import Main from "../src/components/Main/Index.jsx";
+import CarouselImages from "../src/components/CarouselImages/Index.jsx";
+import Testimonial from "../src/components/Testimonial/Index.jsx";
+import Contactame from "../src/components/Contactame/Index.jsx";
 
 export default function Home() {
   return (
