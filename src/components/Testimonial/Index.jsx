@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import Carousel from "../Carousel";
+import Carousel from "../Carousel/Index.jsx";
 
 export default function Index() {
   return (
