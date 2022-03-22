@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
           <div className={`${styles["header__logo"]} `}>PrisMKP</div>
         </div>
         <div className={`${styles["header__right"]} `}>
+          <Icon icon="bx:menu-alt-right" className={`${styles["header__icon"]} `} />
           <nav className={`${styles["navbar"]} `}>
             <ul className={`${styles["navbar__list"]} `}>
               <li className={styles["navbar__item"]}>
@@ -44,19 +46,22 @@ export default function Index() {
               </li>
             </ul>
           </nav>
-          <div>
-            <ul>
-              <li>
+          <div className={`${styles["social"]}`}>
+            <ul className={`${styles["social__list"]}`}>
+              <li className={`${styles["social__item"]}`}>
                 <Link href={"/"}>
-                  <a className={styles[""]} target="_blank">
-                    Instagram
+                  <a className={styles["instagram"]} target="_blank">
+                    <Icon
+                      icon="akar-icons:instagram-fill"
+                      className={styles["instagram_ico"]}
+                    />
                   </a>
                 </Link>
               </li>
-              <li>
+              <li className={`${styles["social__item"]}`}>
                 <Link href={"/"}>
-                  <a className={styles[""]} target="_blank">
-                    Facebook
+                  <a className={styles["facebook"]} target="_blank">
+                    <Icon icon="bxl:facebook" className={styles["facebook_ico"]} />
                   </a>
                 </Link>
               </li>

@@ -17,6 +17,7 @@
     "swiper": "^8.0.7"
   },
   "devDependencies": {
-    "@formspree/cli": "^0.9.6"
+    "@formspree/cli": "^0.9.6",
+    "@iconify/react": "^3.2.0"
   }
 }

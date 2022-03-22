@@ -19,14 +19,9 @@ export default function Index() {
               </span>
               <h2 className={`${styles["profile__title"]}`}>Makeup artist</h2>
               <p className={`${styles["profile__description"]}`}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-                ducimus ab quisquam minima atque, itaque velit eligendi aspernatur
-                pariatur dolor, possimus animi quis maxime illo aperiam earum, officiis
-                saepe adipisci? Laboriosam nemo maxime impedit libero, unde in esse sed
-                optio molestiae molestias quasi est, dolore quidem consequuntur
-                reprehenderit accusantium quae debitis cum placeat ut? Facilis laudantium
-                nulla facere quia repudiandae? Quis excepturi rem aperiam iusto ratione,
-                dolor provident porro eveniet quia fugiat officia.
+                Mi nombre es Priscila Espinoza, soy Maquilladora desde el año 2016. Con
+                mis servicios busco resaltar tu belleza natural y que te sientas mas
+                segura a la hora de lucirte.
               </p>
             </div>
           </div>
@@ -35,14 +30,15 @@ export default function Index() {
           <div className={`${styles["service_left"]}`}>
             <h2 className={`${styles["service__title"]}`}>Services</h2>
             <p className={`${styles["service__description"]}`}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ducimus
-              ab quisquam minima atque, itaque velit eligendi aspernatur pariatur dolor,
-              possimus animi quis maxime illo aperiam earum, officiis saepe adipisci?
-              Laboriosam nemo maxime impedit libero, unde in esse sed optio molestiae
-              molestias quasi est, dolore quidem consequuntur reprehenderit accusantium
-              quae debitis cum placeat ut? Facilis laudantium nulla facere quia
-              repudiandae? Quis excepturi rem aperiam iusto ratione, dolor provident porro
-              eveniet quia fugiat officia.
+              Maquillajes: <br />
+              _Sociales <br />
+              _Carnaval <br />
+              _Shooting <br />
+              _Novias <br />
+              _Egresadas <br />
+              Extenciones de pestañas <br />
+              Perfilado de cejas <br />
+              Tinte con Hennah
             </p>
           </div>
           <div className={`${styles["service_right"]}`}>

@@ -5,6 +5,7 @@ import Main from "../src/components/Main/Index.jsx";
 import CarouselImages from "../src/components/CarouselImages/Index.jsx";
 import Testimonial from "../src/components/Testimonial/Index.jsx";
 import Contactame from "../src/components/Contactame/Index.jsx";
+import Footer from "../src/components/Footer/Index.jsx";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <CarouselImages />
       <Testimonial />
       <Contactame />
+      <Footer />
     </div>
   );
 }

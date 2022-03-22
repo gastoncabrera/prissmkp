@@ -28,6 +28,22 @@
   color: white;
 }
 
+.header__icon {
+  display: block;
+  font-size: 40px;
+  @include breakpoint(lg) {
+    display: none;
+  }
+}
+
+.navbar {
+  display: none;
+
+  @include breakpoint(lg) {
+    display: block;
+  }
+}
+
 .navbar__list {
   list-style: none;
   display: flex;
@@ -37,5 +53,61 @@
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
-  margin: 0 30px;
+  margin: 0 16px;
+
+  @include breakpoint(xl) {
+    margin: 0 30px;
+  }
+}
+
+.social {
+  display: none;
+  @include breakpoint(lg) {
+    display: block;
+  }
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0 10px;
+}
+
+.instagram {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &:hover {
+    background-color: white;
+    color: $color_tertiary;
+  }
+}
+
+.facebook {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 12px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  &:hover {
+    background-color: white;
+    color: $color_tertiary;
+  }
+}
+
+.facebook_ico,
+.instagram_ico {
+  font-size: 16px;
 }
