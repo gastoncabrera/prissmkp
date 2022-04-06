@@ -20,12 +20,12 @@ export default function () {
           </p>
           <a
             className={`${styles["content"]}`}
-            href="mailto:evelinpriscilespinoza@gmail.com"
+            href="mailto:priscilevelinespinoza@gmail.com"
           >
             <div className={`${styles["button"]}`}>
               <Icon icon="carbon:email" className={`${styles["icon"]}`} />
               <span className={`${styles["texto"]}`}>
-                evelinpriscilaespinoza@gmail.com
+                priscilevelinaespinoza@gmail.com
               </span>
             </div>
           </a>
