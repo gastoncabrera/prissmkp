@@ -7,7 +7,7 @@ export default function Index() {
       <div
         className={`${styles["main__container"]} custom_container custom_container--xxl`}
       >
-        <div className={`${styles["profile"]}`}>
+        <div className={`${styles["profile"]}`} id="sobremi">
           <div className={`${styles["profile_left"]}`}>
             <img src="/PYF_9612.jpg" alt="" className={`${styles["profile__image"]}`} />
           </div>
@@ -26,16 +26,21 @@ export default function Index() {
             </div>
           </div>
         </div>
-        <div className={`${styles["service"]}`}>
+        <div className={`${styles["service"]}`} id="servicios">
           <div className={`${styles["service_left"]}`}>
             <h2 className={`${styles["service__title"]}`}>Services</h2>
             <p className={`${styles["service__description"]}`}>
               Maquillajes: <br />
-              _Sociales <br />
-              _Carnaval <br />
-              _Shooting <br />
-              _Novias <br />
-              _Egresadas <br />
+              <span className={`${styles["service__makeup"]}`}>Sociales </span>
+              <br />
+              <span className={`${styles["service__makeup"]}`}>Carnaval</span>
+              <br />
+              <span className={`${styles["service__makeup"]}`}>Shooting</span>
+              <br />
+              <span className={`${styles["service__makeup"]}`}>Novias</span>
+              <br />
+              <span className={`${styles["service__makeup"]}`}>Egresadas</span>
+              <br />
               Extenciones de pestañas <br />
               Perfilado de cejas <br />
               Tinte con Hennah

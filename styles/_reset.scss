@@ -14,6 +14,8 @@ body {
   font-family: "Montserrat";
   background-color: #f6f6f6;
   color: #2b2b2b;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -47,4 +49,16 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+}
+.swiper-wrapper.swiper-wrapper.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6c44 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, #ff6c44) !important;
 }
