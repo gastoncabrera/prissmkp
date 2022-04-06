@@ -1,8 +1,12 @@
 @import "./../../../styles/utils";
 
 .testimonial {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @include breakpoint(lg) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 .testimonial__top {
   margin-bottom: 50px;
@@ -31,10 +35,15 @@
 .testimonio__title {
   color: #292929;
   font-family: $font_2;
-  font-size: 60px;
-  line-height: 59px;
+  font-size: 50px;
+  line-height: 53px;
   font-weight: 800;
   letter-spacing: 2px;
   text-align: left;
   margin: 0;
+
+  @include breakpoint(lg) {
+    font-size: 60px;
+    line-height: 59px;
+  }
 }

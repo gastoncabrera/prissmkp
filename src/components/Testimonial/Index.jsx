@@ -12,7 +12,9 @@ export default function Index() {
         </span>
         <h2 className={`${styles["testimonio__title"]}`}>Lo que ellas dicen</h2>
       </div>
-      <Carousel />
+      <div id="galeria">
+        <Carousel />
+      </div>
     </div>
   );
 }

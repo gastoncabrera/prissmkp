@@ -17,31 +17,23 @@ export default function Index() {
           <nav className={`${styles["navbar"]} `}>
             <ul className={`${styles["navbar__list"]} `}>
               <li className={styles["navbar__item"]}>
-                <Link href={"/"}>
-                  <a className={styles["navbar__link"]} target="_blank">
-                    Inicio
-                  </a>
+                <Link href={"#sobremi"}>
+                  <a className={styles["navbar__link"]}>Sobre mi</a>
                 </Link>
               </li>
               <li className={styles["navbar__item"]}>
-                <Link href={"/"}>
-                  <a className={styles["navbar__link"]} target="_blank">
-                    Sobre mi
-                  </a>
+                <Link href={"#servicios"}>
+                  <a className={styles["navbar__link"]}>Servicios</a>
                 </Link>
               </li>
               <li className={styles["navbar__item"]}>
-                <Link href={"/"}>
-                  <a className={styles["navbar__link"]} target="_blank">
-                    Galeria
-                  </a>
+                <Link href={"#galeria"}>
+                  <a className={styles["navbar__link"]}>Galeria</a>
                 </Link>
               </li>
               <li className={styles["navbar__item"]}>
-                <Link href={"/"}>
-                  <a className={styles["navbar__link"]} target="_blank">
-                    Contacto
-                  </a>
+                <Link href={"#contacto"}>
+                  <a className={styles["navbar__link"]}>Contacto</a>
                 </Link>
               </li>
             </ul>
@@ -49,7 +41,7 @@ export default function Index() {
           <div className={`${styles["social"]}`}>
             <ul className={`${styles["social__list"]}`}>
               <li className={`${styles["social__item"]}`}>
-                <Link href={"/"}>
+                <Link href={"https://www.instagram.com/pris.mkp/?hl=es"}>
                   <a className={styles["instagram"]} target="_blank">
                     <Icon
                       icon="akar-icons:instagram-fill"
@@ -59,7 +51,7 @@ export default function Index() {
                 </Link>
               </li>
               <li className={`${styles["social__item"]}`}>
-                <Link href={"/"}>
+                <Link href={"https://m.facebook.com/maquillajecorrientes/"}>
                   <a className={styles["facebook"]} target="_blank">
                     <Icon icon="bxl:facebook" className={styles["facebook_ico"]} />
                   </a>

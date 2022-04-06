@@ -34,7 +34,12 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0px auto;
+  margin-top: 40px;
+
+  @include breakpoint(lg) {
+    margin-left: 40px;
+  }
 }
 
 .profile__name {
@@ -60,22 +65,31 @@
 .profile__title {
   color: #292929;
   font-family: $font_2;
-  font-size: 60px;
-  line-height: 59px;
+  font-size: 50px;
+  line-height: 53px;
   font-weight: 800;
   letter-spacing: 2px;
   text-align: left;
   margin: 0;
+  @include breakpoint(lg) {
+    font-size: 60px;
+    line-height: 59px;
+  }
 }
 
 .profile__description {
   max-width: 600px;
+  font-size: 20px;
+  line-height: 32px;
   text-align: left;
   color: #858585;
   font-family: $font_1;
-  font-size: 24px;
-  line-height: 36px;
   font-weight: 300;
+
+  @include breakpoint(lg) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 .service {
   margin-top: 100px;
@@ -94,21 +108,35 @@
   text-align: left;
   color: #858585;
   font-family: $font_1;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: 300;
   margin-left: 16px;
+
+  @include breakpoint(lg) {
+    font-size: 24px;
+    line-height: 42px;
+  }
 }
 
 .service__title {
   color: #292929;
   font-family: $font_2;
-  font-size: 60px;
-  line-height: 59px;
+  font-size: 50px;
+  line-height: 53px;
   font-weight: 800;
   letter-spacing: 2px;
   text-align: left;
   margin: 0;
+  margin-top: 40px;
+
+  @include breakpoint(lg) {
+    font-size: 60px;
+    line-height: 59px;
+  }
+}
+.service__makeup {
+  margin-left: 15px;
 }
 
 .service__video {

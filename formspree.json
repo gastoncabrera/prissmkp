@@ -1,8 +1,8 @@
 {
   "forms": {
-    "signupForm": {
-      "name": "signupForm",
-      "actions": [{ "type": "email", "to": "cabreragastonivan31@gmail.com" }],
+    "contactMe": {
+      "name": "contactMe",
+      "actions": [{ "type": "email", "to": "priscilaevelinespinoza@gmail.com" }],
       "fields": {
         "email": {
           "required": true
