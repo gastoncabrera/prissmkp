@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import Menu from "./../Menu";
+import Menu from "./../Menu/Index.jsx";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
