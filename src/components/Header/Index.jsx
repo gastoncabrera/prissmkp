@@ -1,11 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Menu from "./../Menu";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Index() {
+  const [menu, setMenu] = useState(false);
+
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.fromTo(
+      `#header`,
+      1,
+      {
+        // backgroundColor: "#ffffff100",
+        backgroundColor: gsap.getProperty("#header", "#ffffff100"),
+      },
+      {
+        scrollTrigger: {
+          trigger: `#main`,
+          // start: "top bottom",
+          end: "top bottom",
+          scrub: true,
+        },
+        // backgroundColor: "#000",
+        backgroundColor: gsap.getProperty("#main", "#000"),
+      }
+    );
+  }, []);
+
   return (
-    <div className={`${styles["header"]} `}>
+    <div className={`${styles["header"]} `} id={"header"}>
       <div
         className={`${styles["header__container"]} custom_container custom_container--xxxl`}
       >
@@ -13,7 +40,11 @@ export default function Index() {
           <div className={`${styles["header__logo"]} `}>PrisMKP</div>
         </div>
         <div className={`${styles["header__right"]} `}>
-          <Icon icon="bx:menu-alt-right" className={`${styles["header__icon"]} `} />
+          <Icon
+            icon="bx:menu-alt-right"
+            className={`${styles["header__icon"]} `}
+            onClick={() => setMenu(!menu)}
+          />
           <nav className={`${styles["navbar"]} `}>
             <ul className={`${styles["navbar__list"]} `}>
               <li className={styles["navbar__item"]}>
@@ -61,6 +92,7 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <Menu menu={menu} setMenu={setMenu} />
     </div>
   );
 }

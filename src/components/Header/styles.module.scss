@@ -3,10 +3,22 @@
 .header {
   font-family: $font_1;
   z-index: 10;
-  position: absolute;
+  position: sticky;
   top: 0;
-  height: 100%;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(0, 0, 0);
+
+  @include breakpoint(lg) {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.542);
+    height: 100%;
+    width: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .header__container {
@@ -51,7 +63,7 @@
 }
 
 .navbar__item {
-  font-size: 21px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 300;
   margin: 0 16px;

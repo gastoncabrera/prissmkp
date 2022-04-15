@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export default function Index() {
   return (
-    <div className={styles["main"]}>
+    <div className={styles["main"]} id={"main"}>
       <div
         className={`${styles["main__container"]} custom_container custom_container--xxl`}
       >
@@ -47,7 +47,13 @@ export default function Index() {
             </p>
           </div>
           <div className={`${styles["service_right"]}`}>
-            <video src="/1.mp4" className={styles["service__video"]} controls>
+            <video
+              src="/1.mp4"
+              className={styles["service__video"]}
+              controls
+              muted
+              autoPlay
+            >
               <source></source>
             </video>
           </div>
