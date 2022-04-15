@@ -12,12 +12,14 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Home | Maquillaje Profesional</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/l-removebg-preview.ico" />
       </Head>
       <Header />
       <Hero />
       <Main />
-      <CarouselImages />
+      <div id="galeria">
+        <CarouselImages />
+      </div>
       <Testimonial />
       <Contactame />
       <Footer />
